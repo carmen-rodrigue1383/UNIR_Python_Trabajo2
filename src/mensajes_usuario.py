@@ -40,3 +40,4 @@ mensaje_valor_total_inventario = lambda total: print(f"€ {total:.2f}\n")
 mensaje_despedida = lambda: print("""
 Gracias por usar el sistema de inventario. ¡Hasta pronto! 👋
 """)
+mensaje_error_inesperado = lambda: print("⚠️  Ha ocurrido un error inesperado. Saliendo del programa. ")

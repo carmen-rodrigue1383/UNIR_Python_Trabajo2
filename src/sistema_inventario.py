@@ -152,5 +152,8 @@ class Inventario:
                 mensajes.mensaje_opcion_no_valida(opcion_seleccionada)                               
               
 if __name__ == "__main__":
-    inventario = Inventario()
-    inventario.menu_principal();    
+    try
+        inventario = Inventario()    
+        inventario.menu_principal();    
+    except
+        printf("Ha ocurrido un error inesperado. Saliendo del programa. ")
