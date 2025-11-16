@@ -59,6 +59,9 @@ class Inventario:
         return None 
 
     def listar_productos(self):
+        if(len(self.productos) == 0):
+            mensajes.mensaje_sin_productos()
+            return
         for producto in self.productos:
             mensajes.mensaje_detalle_producto(producto)
             

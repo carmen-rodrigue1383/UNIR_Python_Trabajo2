@@ -29,6 +29,7 @@ mensaje_bienvenida_listar_productos = lambda: print("""
 
 Aquí están todos los productos en el inventario:
 """)
+mensaje_sin_productos = lambda: print("El inventario está vacío. No hay productos para mostrar.")
 mensaje_detalle_producto = lambda producto: print(f"{producto}")
 mensaje_bienvenida_total_inventario = lambda: print("""
 --- Valor Total del Inventario ---
