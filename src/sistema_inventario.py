@@ -111,7 +111,7 @@ class Inventario:
                     precio_entrada = prompts.pedir_precio_producto()
                     try:
                         precio = float(precio_entrada)
-                        if(precio <= 0):
+                        if(precio < 0):
                             raise PrecioNoValido
                         precio_valido = True
                     except (ValueError, PrecioNoValido) as e:
@@ -122,7 +122,7 @@ class Inventario:
                     cantidad_entrada = prompts.pedir_cantidad_producto()
                     try:
                         cantidad = int(cantidad_entrada)
-                        if(cantidad <= 0):
+                        if(cantidad < 0):
                             raise CantidadNoValida
                         cantidad_valida = True
                     except (ValueError, CantidadNoValida) as e:

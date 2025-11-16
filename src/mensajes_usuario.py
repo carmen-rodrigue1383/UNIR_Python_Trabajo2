@@ -15,8 +15,8 @@ Vamos a agregar un nuevo producto.
 Por favor, proporciona los siguientes detalles:
 """)
 mensaje_nombre_producto_invalido = lambda: print("⚠️  El nombre del producto no puede estar vacío. Por favor, ingresa un nombre válido.")
-mensaje_cantidad_producto_invalida = lambda cantidad: print(f"⚠️  La cantidad '{cantidad}' no es válida. Debe ser un número entero mayor que 0.")
-mensaje_precio_producto_invalido = lambda precio: print(f"⚠️  El precio '{precio}' no es válido. Debe ser un número mayor que 0.")
+mensaje_cantidad_producto_invalida = lambda cantidad: print(f"⚠️  La cantidad '{cantidad}' no es válida. Debe ser un número entero igual o mayor que 0.")
+mensaje_precio_producto_invalido = lambda precio: print(f"⚠️  El precio '{precio}' no es válido. Debe ser un número igual o mayor que 0.")
 mensaje_producto_agregado = lambda nombre: print(f"✅  Producto '{nombre}' agregado al inventario.")
 mensaje_bienvenida_buscar_producto = lambda: print("""
 --- Buscar Producto ---
