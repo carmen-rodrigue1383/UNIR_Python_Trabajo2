@@ -10,7 +10,7 @@ class Producto:
 
     def __init__(self, nombre: str, cantidad: int, precio: float):
         if nombre.strip() == "":
-            raise ValueError("El nombre del producto no puede estar vacío")
+            raise NombreNoValido("El nombre del producto no puede estar vacío")
 
         if cantidad < 0:
             raise CantidadNoValida("La cantidad no puede ser negativa")
