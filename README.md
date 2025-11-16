@@ -1,26 +1,55 @@
-# Título
+# Inventario
 
 ## Descripción
+Este proyecto es un sistema básico de inventario desarrollada como parte del Trabajo 2 del "Curso de Programación en Python" en UNIR.
 
-Descripción
-
-- [Enunciado](./enunciado.md) 
+- [Enunciado del ejercicio](./enunciado.md) 
 - [Solución](./solucion.md)
 
 ## Estructura
 ```
 src/
-├── main.py  # Módulo principal
-├── ...
-└── constantes.py            # Constantes 
+├── sistema_inventario.py  # Módulo principal
+├── constantes.py            # Constantes 
+├── mensajes_usuario.py      # Mensajes para el usuario
+├── prompts.py              # Funciones de entrada
+└── reports.py              # Generación de reportes
 ```
 
-## Uso
+## 🚀 Cómo empezar desde cero
+
+### 1. Instala Anaconda (recomendado para principiantes)
+
+🔗 [Descargar Anaconda](https://www.anaconda.com/products/distribution)
+
+Anaconda incluye Python, Jupyter y muchas librerías útiles. Es la forma más fácil de empezar sin complicaciones.
+
+### 2. Clona o descarga el repositorio
+
+Desde Anaconda Prompt o tu terminal:
+
 ```cmd
-python src/main.py
+git clone https://github.com/carmen-rodrigue1383/UNIR_Python_Trabajo2.git
+cd UNIR_Python_Trabajo2
+```
+O descarga el ZIP desde GitHub y extrae la carpeta.
+
+### 3. (Opcional) Crea un entorno virtual
+```cmd
+conda create -n unir_trabajo2 python=3.8
+conda activate unir_trabajo2
 ```
 
-## Test
+### 4. Instala las dependencias
+```cmd
+pip install pytest pytest-cov pytest-mock
+```
+
+## Ejecutar el sistema de inventario
+```cmd
+python src/sistema_inventario.py
+```
+## Ejecutar los test
 ```cmd
 pytest tests/
 ```
