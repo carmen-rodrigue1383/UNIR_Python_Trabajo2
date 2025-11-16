@@ -40,7 +40,7 @@ class Producto:
         self.precio = precio
 
     def __str__(self):
-        return f"Producto(nombre={self.nombre}, cantidad={self.cantidad}, precio={self.precio})"
+        return f"{self.cantidad} {'unidades' if self.cantidad > 1 or self.cantidad == 0 else 'unidad'} de {self.nombre}, con un precio de {self.precio:.2f}, y un valor total de {self.calcular_valor_total():.2f} €"
 
 class Inventario:
     productos: list
